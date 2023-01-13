@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  max-width: 90rem;
+  min-height: 100vh;
+  margin: 0 auto;
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --primary-violet: hsl(257, 40%, 49%);
+  --primary-soft_magenta: hsl(300, 69%, 71%);
+  --ff-body: 'Open Sans', sans-serif;
+  --ff-headings: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(./images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0;
+  background-color: var(--primary-violet);
+  font-family: var(--ff-body);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 40rem;
+  margin: auto;
+  padding: 2rem;
+}
+
+.logo {
+  width: 12rem;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  font-family: var(--ff-headings);
+  font-size: 2.2rem;
+  ;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  ;
+
+}
+
+p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+
+}
+
+.btn {
+  font-family: var(--ff-headings);
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 100vw;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--primary-violet);
+  display: block;
+  text-align: center;
+  width: 20rem;
+  margin: 2rem auto 5rem;
+}
+
+
+
+.social ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #fff;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  back: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width: 60rem) {
+  .btn:hover {
+    background-color: var(--primary-soft_magenta);
+    color: #fff
+  }
+
+  .social a:hover {
+   color: var(--primary-soft_magenta);
+   border: 1px solid var(--primary-soft_magenta);
+  }
+
+
+}
