@@ -19,7 +19,6 @@ body {
   max-width: 90rem;
   min-height: 100vh;
   margin: 0 auto;
-
 }
 
 img,
@@ -57,7 +56,6 @@ body {
 }
 
 main {
-  max-width: 40rem;
   margin: auto;
   padding: 2rem;
 }
@@ -67,17 +65,18 @@ main {
   margin-bottom: 5rem;
 }
 
+.even img {
+  margin: 0 auto;
+}
+
 h1 {
   font-family: var(--ff-headings);
   font-size: 2.2rem;
-  ;
   text-align: center;
   font-weight: 600;
   color: #fff;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  ;
-
 }
 
 p {
@@ -136,15 +135,66 @@ p {
 /* MEDIA QUERY */
 
 @media only screen and (min-width: 60rem) {
+  body {
+    background-image: url(./images/bg-desktop.svg);
+  }
+
+  main {
+    padding: 5rem;
+  }
+
+  .hero {
+    display: flex;
+    gap: 3rem;
+  }
+
+
+  .even:first-child {
+    flex-basis: 160%;
+
+  }
+
+  h1,
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    margin-right: auto;
+    margin-left: 0;
+    width: 15rem;
+    ;
+  }
+
   .btn:hover {
     background-color: var(--primary-soft_magenta);
     color: #fff
   }
 
-  .social a:hover {
-   color: var(--primary-soft_magenta);
-   border: 1px solid var(--primary-soft_magenta);
+  .social a {
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
   }
 
+  .social a:hover {
+    color: var(--primary-soft_magenta);
+    border: 1px solid var(--primary-soft_magenta);
+  }
+
+  .social ul {
+    justify-content: flex-end;
+    margin-block: 2rem;
+    gap: 1rem;
+  }
 
 }
