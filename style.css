@@ -96,7 +96,7 @@ p {
   color: var(--primary-violet);
   display: block;
   text-align: center;
-  width: 20rem;
+  max-width: 18rem;
   margin: 2rem auto 5rem;
 }
 
@@ -129,7 +129,7 @@ p {
 }
 
 .attribution a {
-  back: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 /* MEDIA QUERY */
