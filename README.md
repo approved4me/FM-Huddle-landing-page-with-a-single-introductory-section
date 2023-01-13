@@ -10,6 +10,8 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
+Live: https://approved4me.github.io/FM-Huddle-landing-page-with-a-single-introductory-section/
+
 ## The challenge
 
 Your challenge is to build out this landing page from the designs provided in the starter code.
